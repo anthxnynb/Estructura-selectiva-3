@@ -1,0 +1,24 @@
+Algoritmo Descuento_Compra
+    Definir monto, descuento, montoDescuento, totalPagar Como Real
+// Declaracion de varibles
+    Escribir "Ingrese el monto de la compra:"
+    Leer monto
+// Control de variabñes
+    Si monto >= 200 Entonces
+        descuento = 0.15
+    Sino
+        Si monto >= 100 Entonces
+            descuento = 0.10
+        Sino
+            descuento = 0.05
+        FinSi
+    FinSi
+
+    montoDescuento = monto * descuento
+    totalPagar = monto - montoDescuento
+
+    Escribir "Monto de la compra: $", monto
+    Escribir "Porcentaje de descuento: ", descuento * 100, "%"
+    Escribir "Valor del descuento: $", montoDescuento
+    Escribir "Monto a pagar: $", totalPagar
+FinAlgoritmo
